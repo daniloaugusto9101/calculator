@@ -1,0 +1,9 @@
+.container{
+    width: 300px;
+    background-color: #212b41;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* padding: .5em; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+}

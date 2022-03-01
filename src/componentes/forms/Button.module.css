@@ -1,0 +1,15 @@
+.botao{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #1bc7aa;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #212b41;
+}
+
+.botao__sinais{
+    background-color: #212b41;
+}
