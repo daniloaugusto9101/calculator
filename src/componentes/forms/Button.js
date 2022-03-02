@@ -1,8 +1,8 @@
 import styles from './Button.module.css'
 
-function Button(){
+function Button({customClass, label, onClick}){
     return(
-        <div className={`${styles.botao} ${styles.botao__sinais}`}>C</div>
+        <div className={`${styles.botao} ${styles[customClass]} `} onClick={onClick}>{label}</div>
     )
 }
 

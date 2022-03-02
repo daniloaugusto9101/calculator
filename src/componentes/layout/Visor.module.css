@@ -5,4 +5,11 @@
     height: 140px;
     align-items: end;
     justify-content: end;
+    /* background: #000; */
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+.visor > span:nth-child(1){
+    font-size: 1rem;
 }
