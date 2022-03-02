@@ -48,7 +48,7 @@ function Visor() {
             setResultado(r)
             setOperado(true)
         }catch{
-            setResultado('ERRO')
+            setResultado('ERRO0')
         }
     }
 
