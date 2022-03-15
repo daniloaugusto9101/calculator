@@ -9,9 +9,9 @@ function App() {
 
     const [digito, setDigito] = useState();
 
-    function addDigito(event) {
-        let text = event.target.value;
-        console.log(text);
+    function addDigito(event, label) {
+        // let text = event.target.value;
+        console.log(label);
     }
 
     return (
@@ -20,7 +20,7 @@ function App() {
             <span>{resultato}</span>
             <span>{valor}</span>
             <div>
-                <button onClick={() => this.setState({ digito: '1' })} >1</button>
+                <button onClick={addDigito(label)} >1</button>
                 <button>2</button>
                 <button>3</button>
                 <button>+</button>
