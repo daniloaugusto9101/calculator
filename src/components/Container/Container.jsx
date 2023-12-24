@@ -1,6 +1,6 @@
-import Display from "../Display/Display"
-import Header from "../Header"
-import Main from "../Main"
+import Display from "@components/Display"
+import Header from "@components/Header"
+import Main from "@components/Main"
 
 const Container = () => {
   return (
