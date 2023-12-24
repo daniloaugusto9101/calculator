@@ -1,14 +1,14 @@
-
-import viteLogo from '/vite.svg'
 import './App.css'
+import Container from './components/Container'
+
 
 function App() {
 
 
   return (
-    <>
-      <h1 className='bg-slate-600'>teste</h1>
-    </>
+    <div className='p-2'>
+      <Container />
+    </div>
   )
 }
 
