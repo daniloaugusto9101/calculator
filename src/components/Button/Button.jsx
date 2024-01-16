@@ -1,7 +1,13 @@
 const Button = ({ label, onClick }) => {
+  const regexOperador = /^[+\-*/]+$/;
+
+  const btnColor = regexOperador.test(label)
+    ? "bg-pink-600"
+    : "bg-zinc-700 bg-opacity-40";
+
   return (
     <button
-      className="bg-zinc-700 bg-opacity-40 dark:text-white rounded-sm grid place-items-center font-extrabold text-xl cursor-pointer"
+      className={`${btnColor}  dark:text-white rounded-sm grid place-items-center font-extrabold text-xl cursor-pointer`}
       onClick={onClick}
     >
       {label}

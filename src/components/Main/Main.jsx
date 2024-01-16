@@ -31,76 +31,28 @@ const Main = () => {
   };
 
   const dataBtn = [
-    {
-      label: "7",
-      // onClick: handleClick,
-    },
-    {
-      label: "8",
-      // onClick: handleClick,
-    },
-    {
-      label: "9",
-      // onClick: handleClick,
-    },
-    {
-      label: "/",
-      // onClick: handleClick,
-    },
-    {
-      label: "4",
-      // onClick: handleClick,
-    },
-    {
-      label: "5",
-      // onClick: handleClick,
-    },
-    {
-      label: "6",
-      // onClick: handleClick,
-    },
-    {
-      label: "-",
-      // onClick: handleClick,
-    },
-    {
-      label: "1",
-      // onClick: handleClick,
-    },
-    {
-      label: "2",
-      // onClick: handleClick,
-    },
-    {
-      label: "3",
-      // onClick: handleClick,
-    },
-    {
-      label: "*",
-      // onClick: handleClick,
-    },
-    {
-      label: ",",
-      // onClick: handleClick,
-    },
-    {
-      label: "0",
-      // onClick: handleClick,
-    },
-    {
-      label: "=",
-      // onClick: handleClick,
-    },
-    {
-      label: "+",
-      // onClick: handleClick,
-    },
+    "7",
+    "8",
+    "9",
+    "/",
+    "4",
+    "5",
+    "6",
+    "-",
+    "1",
+    "2",
+    "3",
+    "*",
+    ",",
+    "0",
+    "=",
+    "+",
   ];
 
   return (
     <main className="grid grid-cols-4 gap-2 h-72">
-      {dataBtn.map(({ label }, id) => (
-        <Button key={id} label={label} onClick={handleClick} />
+      {dataBtn.map((obj, id) => (
+        <Button key={id} label={obj} onClick={handleClick} />
       ))}
     </main>
   );

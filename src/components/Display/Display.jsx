@@ -9,7 +9,7 @@ const Display = () => {
         {display}
       </div>
       <div
-        className="uppercase font-bold text-right text-white cursor-pointer pb-3"
+        className="uppercase font-bold text-right dark:text-white cursor-pointer pb-3"
         onClick={() => setDisplay("")}
       >
         del
