@@ -4,9 +4,8 @@ export const GlobalContext = React.createContext();
 
 export const GlobalStorage = ({ children }) => {
   const [isThemeDark, setIsThemeDark] = React.useState(true);
-  const [display, setDisplay] = React.useState(0);
-  const [total, setTotal] = React.useState(0);
-  const [isOperado, setIsOperado] = React.useState(false);
+  const [display, setDisplay] = React.useState("");
+  const [isOperado, setIsOperado] = React.useState(true);
 
   return (
     <GlobalContext.Provider
@@ -15,8 +14,6 @@ export const GlobalStorage = ({ children }) => {
         setIsThemeDark,
         display,
         setDisplay,
-        total,
-        setTotal,
         isOperado,
         setIsOperado,
       }}

@@ -3,7 +3,7 @@ import Button from "@components/Button";
 import { GlobalContext } from "@storage/GlobalContext";
 
 const Main = () => {
-  const { display, setDisplay, total, setTotal, isOperado, setIsOperado } =
+  const { display, setDisplay, isOperado, setIsOperado } =
     React.useContext(GlobalContext);
 
   const handleClick = ({ target }) => {
@@ -20,11 +20,10 @@ const Main = () => {
       setIsOperado(true);
       return;
     }
+
     try {
-      if (target.innerText == "=") {
-        // let total = eval(display);
-        // setDisplay(total);
-        console.log(eval(display));
+      if (target.innerText == "=" && !isOperado) {
+        setDisplay(eval(display));
       }
     } catch {
       setDisplay("ERRO");
